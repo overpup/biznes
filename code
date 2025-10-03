@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class metodi {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Заказываете? (da/net)");
+        String otvet = in.next();
+
+        if (otvet.equals("da")) {
+            System.out.println("Введите ваши данные:");
+            String b = in.next();
+            System.out.println("Ваши данные: " + b);
+        } else {
+            System.out.println("Звонит менеджер\nМенеджер: Зелимхан\nУточнить детали.");
+        }
+
+        in.close();
+    }
+}
